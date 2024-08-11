@@ -2,8 +2,6 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     id("java")
-    id("maven-publish")
-    id("net.saliman.properties") version "1.5.2"
     kotlin("jvm") version "2.0.10"
 }
 
@@ -29,30 +27,6 @@ dependencies {
 
 kotlin {
     jvmToolchain(21)
-}
-
-publishing {
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/CrystalNetworkNL/CrystalAPI")
-
-            credentials {
-                username = (property("gpr.name") ?: System.getenv("GITHUB_ACTOR")).toString()
-                password = (property("gpr.token") ?: System.getenv("GITHUB_TOKEN")).toString()
-            }
-        }
-    }
-
-    publications {
-        create<MavenPublication>("gpr") {
-            from(components["java"])
-
-            groupId = "net.crystalnetwork"
-            artifactId = "api"
-            version = project.version.toString()
-        }
-    }
 }
 
 tasks {
