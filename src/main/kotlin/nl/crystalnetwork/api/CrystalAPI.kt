@@ -2,6 +2,14 @@ package nl.crystalnetwork.api
 
 /**
  * Interface representing the Crystal API.
+ *
+ * Example usage:
+ * ```
+ * val api = Bukkit.getPluginManager().getPlugin("CrystalCore") as CrystalAPI
+ * val economy = api.getEconomy()
+ * ```
+ *
+ * @since 1.0
  */
 interface CrystalAPI {
 

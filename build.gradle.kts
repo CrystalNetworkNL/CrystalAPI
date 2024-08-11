@@ -62,15 +62,15 @@ tasks {
     }
 
     dokkaHtml {
-        outputDirectory.set(layout.buildDirectory.dir("docs/html"))
-    }
-
-    dokkaGfm {
-        outputDirectory.set(layout.buildDirectory.dir("docs/markdown"))
+        outputDirectory.set(file("docs/html"))
     }
 
     dokkaJavadoc {
-        outputDirectory.set(layout.buildDirectory.dir("docs/javadocs"))
+        outputDirectory.set(file("docs/jd"))
+    }
+
+    dokkaGfm {
+        outputDirectory.set(file("docs/md"))
     }
 
     build {
