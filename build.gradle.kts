@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     id("java")
+    id("maven-publish")
     kotlin("jvm") version "2.0.10"
 }
 
@@ -27,6 +28,18 @@ dependencies {
 
 kotlin {
     jvmToolchain(21)
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("mavenJava") {
+            from(components["java"])
+        }
+
+        create<MavenPublication>("mavenKotlin") {
+            from(components["kotlin"])
+        }
+    }
 }
 
 tasks {
