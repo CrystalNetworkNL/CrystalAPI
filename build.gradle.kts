@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     id("java")
     id("maven-publish")
+    id("org.jetbrains.dokka") version "1.9.20"
     kotlin("jvm") version "2.0.10"
 }
 
@@ -52,5 +53,31 @@ tasks {
     compileKotlin {
         compilerOptions.javaParameters = true
         compilerOptions.jvmTarget.set(JvmTarget.JVM_21)
+    }
+
+    register<Jar>("dokkaJar") {
+        from(dokkaHtml)
+        dependsOn(dokkaHtml)
+        archiveClassifier.set("javadoc")
+    }
+
+    dokkaHtml {
+        outputDirectory.set(layout.buildDirectory.dir("docs/html"))
+    }
+
+    dokkaGfm {
+        outputDirectory.set(layout.buildDirectory.dir("docs/markdown"))
+    }
+
+    dokkaJavadoc {
+        outputDirectory.set(layout.buildDirectory.dir("docs/javadocs"))
+    }
+
+    build {
+        dependsOn("dokkaHtml", "dokkaGfm", "dokkaJavadoc")
+    }
+
+    publish {
+        dependsOn("build")
     }
 }
