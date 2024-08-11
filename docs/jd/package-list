@@ -1,0 +1,5 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:nl.crystalnetwork.api/Economy.Currency///PointingToDeclaration/nl/crystalnetwork/api/Economy.Currency.html
+nl.crystalnetwork.api
+
