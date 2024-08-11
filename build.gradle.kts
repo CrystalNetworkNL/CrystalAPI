@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "nl.crystalnetwork"
-version = "1.1-SNAPSHOT"
+version = "1.2-SNAPSHOT"
 
 sourceSets.main {
     java.srcDirs("src/main/java", "src/main/kotlin")
