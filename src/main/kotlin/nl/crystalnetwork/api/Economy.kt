@@ -1,6 +1,11 @@
 package nl.crystalnetwork.api
 
+import dev.triumphteam.gui.builder.item.ItemBuilder
+import net.kyori.adventure.text.Component
+import net.kyori.adventure.text.format.NamedTextColor
+import org.bukkit.Material
 import org.bukkit.OfflinePlayer
+import org.bukkit.inventory.ItemFlag
 
 /**
  * Interface representing the economy system.
@@ -8,6 +13,26 @@ import org.bukkit.OfflinePlayer
  * @since 1.0
  */
 interface Economy {
+
+    companion object Items {
+        val CRYSTAL = lazy {
+            ItemBuilder.from(Material.EMERALD)
+                .name(Component.text("Crystal", NamedTextColor.AQUA))
+                .lore(Component.text("A valuable currency used to purchase items.", NamedTextColor.GRAY))
+                .unbreakable()
+                .flags(ItemFlag.HIDE_ATTRIBUTES)
+                .build()
+        }
+
+        val COIN = lazy {
+            ItemBuilder.from(Material.GOLD_INGOT)
+                .name(Component.text("Coin", NamedTextColor.GOLD))
+                .lore(Component.text("A common currency used to purchase items.", NamedTextColor.GRAY))
+                .unbreakable()
+                .flags(ItemFlag.HIDE_ATTRIBUTES)
+                .build()
+        }
+    }
 
     /**
      * Enum representing different types of currencies.

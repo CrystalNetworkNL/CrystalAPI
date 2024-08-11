@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "nl.crystalnetwork"
-version = "1.2-SNAPSHOT"
+version = "1.4-SNAPSHOT"
 
 sourceSets.main {
     java.srcDirs("src/main/java", "src/main/kotlin")
@@ -24,7 +24,8 @@ repositories {
 
 dependencies {
     compileOnly(kotlin("stdlib"))
-    compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
+    compileOnly("dev.triumphteam:triumph-gui:3.1.10")
 }
 
 kotlin {
