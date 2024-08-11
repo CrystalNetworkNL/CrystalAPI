@@ -31,7 +31,7 @@ interface Economy {
      * economy.add(player, 100u)
      * ```
      */
-    fun add(player: OfflinePlayer, amount: UInt)
+    fun add(player: OfflinePlayer, amount: Int)
 
     /**
      * Adds a specified amount of a specific currency to the player's balance.
@@ -46,7 +46,7 @@ interface Economy {
      * economy.add(player, 100u, Economy.Currency.CRYSTALS)
      * ```
      */
-    fun add(player: OfflinePlayer, amount: UInt, currency: Currency)
+    fun add(player: OfflinePlayer, amount: Int, currency: Currency)
 
     /**
      * Adds a specified amount of crystals to the player's balance.
@@ -60,7 +60,7 @@ interface Economy {
      * economy.addCrystals(player, 100u)
      * ```
      */
-    fun addCrystals(player: OfflinePlayer, amount: UInt) = add(player, amount, Currency.CRYSTALS)
+    fun addCrystals(player: OfflinePlayer, amount: Int) = add(player, amount, Currency.CRYSTALS)
 
     /**
      * Adds a specified amount of coins to the player's balance.
@@ -74,7 +74,7 @@ interface Economy {
      * economy.addCoins(player, 100u)
      * ```
      */
-    fun addCoins(player: OfflinePlayer, amount: UInt) = add(player, amount, Currency.COINS)
+    fun addCoins(player: OfflinePlayer, amount: Int) = add(player, amount, Currency.COINS)
 
     /**
      * Removes a specified amount from the player's balance.
@@ -88,7 +88,7 @@ interface Economy {
      * economy.remove(player, 50u)
      * ```
      */
-    fun remove(player: OfflinePlayer, amount: UInt)
+    fun remove(player: OfflinePlayer, amount: Int)
 
     /**
      * Removes a specified amount of a specific currency from the player's balance.
@@ -103,7 +103,7 @@ interface Economy {
      * economy.remove(player, 50u, Economy.Currency.COINS)
      * ```
      */
-    fun remove(player: OfflinePlayer, amount: UInt, currency: Currency)
+    fun remove(player: OfflinePlayer, amount: Int, currency: Currency)
 
     /**
      * Removes a specified amount of crystals from the player's balance.
@@ -117,7 +117,7 @@ interface Economy {
      * economy.removeCrystals(player, 50u)
      * ```
      */
-    fun removeCrystals(player: OfflinePlayer, amount: UInt) = remove(player, amount, Currency.CRYSTALS)
+    fun removeCrystals(player: OfflinePlayer, amount: Int) = remove(player, amount, Currency.CRYSTALS)
 
     /**
      * Removes a specified amount of coins from the player's balance.
@@ -131,7 +131,7 @@ interface Economy {
      * economy.removeCoins(player, 50u)
      * ```
      */
-    fun removeCoins(player: OfflinePlayer, amount: UInt) = remove(player, amount, Currency.COINS)
+    fun removeCoins(player: OfflinePlayer, amount: Int) = remove(player, amount, Currency.COINS)
 
     /**
      * Sets the player's balance to a specified amount.
@@ -145,7 +145,7 @@ interface Economy {
      * economy.set(player, 200u)
      * ```
      */
-    fun set(player: OfflinePlayer, amount: UInt)
+    fun set(player: OfflinePlayer, amount: Int)
 
     /**
      * Sets the player's balance to a specified amount of a specific currency.
@@ -160,7 +160,7 @@ interface Economy {
      * economy.set(player, 200u, Economy.Currency.CRYSTALS)
      * ```
      */
-    fun set(player: OfflinePlayer, amount: UInt, currency: Currency)
+    fun set(player: OfflinePlayer, amount: Int, currency: Currency)
 
     /**
      * Sets the player's balance to a specified amount of crystals.
@@ -174,7 +174,7 @@ interface Economy {
      * economy.setCrystals(player, 200u)
      * ```
      */
-    fun setCrystals(player: OfflinePlayer, amount: UInt) = set(player, amount, Currency.CRYSTALS)
+    fun setCrystals(player: OfflinePlayer, amount: Int) = set(player, amount, Currency.CRYSTALS)
 
     /**
      * Sets the player's balance to a specified amount of coins.
@@ -188,7 +188,7 @@ interface Economy {
      * economy.setCoins(player, 200u)
      * ```
      */
-    fun setCoins(player: OfflinePlayer, amount: UInt) = set(player, amount, Currency.COINS)
+    fun setCoins(player: OfflinePlayer, amount: Int) = set(player, amount, Currency.COINS)
 
     /**
      * Resets the player's balance to the default value.
@@ -255,7 +255,7 @@ interface Economy {
      * val crystals = economy.getCrystals(player)
      * ```
      */
-    fun getCrystals(player: OfflinePlayer): UInt
+    fun getCrystals(player: OfflinePlayer): Int
 
     /**
      * Retrieves the player's balance of coins.
@@ -269,5 +269,5 @@ interface Economy {
      * val coins = economy.getCoins(player)
      * ```
      */
-    fun getCoins(player: OfflinePlayer): UInt
+    fun getCoins(player: OfflinePlayer): Int
 }
