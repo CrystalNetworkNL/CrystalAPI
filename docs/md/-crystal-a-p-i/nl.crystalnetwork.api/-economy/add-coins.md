@@ -3,7 +3,7 @@
 # addCoins
 
 [jvm]\
-open fun [addCoins](add-coins.md)(player: OfflinePlayer, amount: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html))
+open fun [addCoins](add-coins.md)(player: OfflinePlayer, amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
 Adds a specified amount of coins to the player's balance.
 

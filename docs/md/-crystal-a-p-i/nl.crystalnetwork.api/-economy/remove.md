@@ -3,7 +3,7 @@
 # remove
 
 [jvm]\
-abstract fun [remove](remove.md)(player: OfflinePlayer, amount: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html))
+abstract fun [remove](remove.md)(player: OfflinePlayer, amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
 Removes a specified amount from the player's balance.
 
@@ -27,7 +27,7 @@ jvm
 | amount | The amount to remove from the player's balance. |
 
 [jvm]\
-abstract fun [remove](remove.md)(player: OfflinePlayer, amount: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html), currency: [Economy.Currency](-currency/index.md))
+abstract fun [remove](remove.md)(player: OfflinePlayer, amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), currency: [Economy.Currency](-currency/index.md))
 
 Removes a specified amount of a specific currency from the player's balance.
 

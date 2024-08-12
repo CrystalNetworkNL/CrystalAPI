@@ -3,7 +3,7 @@
 # addCrystals
 
 [jvm]\
-open fun [addCrystals](add-crystals.md)(player: OfflinePlayer, amount: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html))
+open fun [addCrystals](add-crystals.md)(player: OfflinePlayer, amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
 Adds a specified amount of crystals to the player's balance.
 

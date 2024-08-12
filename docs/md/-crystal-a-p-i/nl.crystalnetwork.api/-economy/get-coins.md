@@ -3,7 +3,7 @@
 # getCoins
 
 [jvm]\
-abstract fun [getCoins](get-coins.md)(player: OfflinePlayer): [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html)
+abstract fun [getCoins](get-coins.md)(player: OfflinePlayer): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
 Retrieves the player's balance of coins.
 

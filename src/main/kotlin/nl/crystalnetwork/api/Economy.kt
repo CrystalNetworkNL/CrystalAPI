@@ -1,6 +1,11 @@
 package nl.crystalnetwork.api
 
+import dev.triumphteam.gui.builder.item.ItemBuilder
+import net.kyori.adventure.text.Component
+import net.kyori.adventure.text.format.NamedTextColor
+import org.bukkit.Material
 import org.bukkit.OfflinePlayer
+import org.bukkit.inventory.ItemFlag
 
 /**
  * Interface representing the economy system.
@@ -8,6 +13,63 @@ import org.bukkit.OfflinePlayer
  * @since 1.0
  */
 interface Economy {
+
+    companion object {
+
+        /**
+         * Lazy-initialized item representing a crystal.
+         *
+         * @since 1.5
+         */
+        val CRYSTAL = lazy {
+            ItemBuilder.from(Material.EMERALD)
+                .name(Component.text("Crystal", NamedTextColor.AQUA))
+                .lore(Component.text("A valuable currency used to purchase items.", NamedTextColor.GRAY))
+                .unbreakable()
+                .flags(ItemFlag.HIDE_ATTRIBUTES)
+                .build()
+        }
+
+        /**
+         * Lazy-initialized item representing a coin.
+         *
+         * @since 1.5
+         */
+        val COIN = lazy {
+            ItemBuilder.from(Material.GOLD_INGOT)
+                .name(Component.text("Coin", NamedTextColor.GOLD))
+                .lore(Component.text("A common currency used to purchase items.", NamedTextColor.GRAY))
+                .unbreakable()
+                .flags(ItemFlag.HIDE_ATTRIBUTES)
+                .build()
+        }
+
+        /**
+         * Exception thrown when an economy-related error occurs.
+         *
+         * @since 1.5
+         */
+        open class EconomyException(message: String) : RuntimeException(message)
+
+        /**
+         * Exception thrown when there are insufficient funds.
+         *
+         * @param amount The amount that was attempted to be used.
+         * @param currency The type of currency involved.
+         * @since 1.5
+         */
+        class InsufficientFundsException(amount: Int, currency: Currency) :
+            EconomyException("Insufficient funds: $amount ${currency.name.toLowerCase()}")
+
+        /**
+         * Exception thrown when there is insufficient space in the inventory.
+         *
+         * @param amount The amount of space required.
+         * @since 1.5
+         */
+        class InsufficientSpaceException(amount: Int) :
+            EconomyException("Insufficient space in inventory, required: $amount")
+    }
 
     /**
      * Enum representing different types of currencies.
@@ -31,7 +93,7 @@ interface Economy {
      * economy.add(player, 100u)
      * ```
      */
-    fun add(player: OfflinePlayer, amount: UInt)
+    fun add(player: OfflinePlayer, amount: Int)
 
     /**
      * Adds a specified amount of a specific currency to the player's balance.
@@ -46,7 +108,7 @@ interface Economy {
      * economy.add(player, 100u, Economy.Currency.CRYSTALS)
      * ```
      */
-    fun add(player: OfflinePlayer, amount: UInt, currency: Currency)
+    fun add(player: OfflinePlayer, amount: Int, currency: Currency)
 
     /**
      * Adds a specified amount of crystals to the player's balance.
@@ -60,7 +122,7 @@ interface Economy {
      * economy.addCrystals(player, 100u)
      * ```
      */
-    fun addCrystals(player: OfflinePlayer, amount: UInt) = add(player, amount, Currency.CRYSTALS)
+    fun addCrystals(player: OfflinePlayer, amount: Int) = add(player, amount, Currency.CRYSTALS)
 
     /**
      * Adds a specified amount of coins to the player's balance.
@@ -74,7 +136,7 @@ interface Economy {
      * economy.addCoins(player, 100u)
      * ```
      */
-    fun addCoins(player: OfflinePlayer, amount: UInt) = add(player, amount, Currency.COINS)
+    fun addCoins(player: OfflinePlayer, amount: Int) = add(player, amount, Currency.COINS)
 
     /**
      * Removes a specified amount from the player's balance.
@@ -88,7 +150,7 @@ interface Economy {
      * economy.remove(player, 50u)
      * ```
      */
-    fun remove(player: OfflinePlayer, amount: UInt)
+    fun remove(player: OfflinePlayer, amount: Int)
 
     /**
      * Removes a specified amount of a specific currency from the player's balance.
@@ -103,7 +165,7 @@ interface Economy {
      * economy.remove(player, 50u, Economy.Currency.COINS)
      * ```
      */
-    fun remove(player: OfflinePlayer, amount: UInt, currency: Currency)
+    fun remove(player: OfflinePlayer, amount: Int, currency: Currency)
 
     /**
      * Removes a specified amount of crystals from the player's balance.
@@ -117,7 +179,7 @@ interface Economy {
      * economy.removeCrystals(player, 50u)
      * ```
      */
-    fun removeCrystals(player: OfflinePlayer, amount: UInt) = remove(player, amount, Currency.CRYSTALS)
+    fun removeCrystals(player: OfflinePlayer, amount: Int) = remove(player, amount, Currency.CRYSTALS)
 
     /**
      * Removes a specified amount of coins from the player's balance.
@@ -131,7 +193,7 @@ interface Economy {
      * economy.removeCoins(player, 50u)
      * ```
      */
-    fun removeCoins(player: OfflinePlayer, amount: UInt) = remove(player, amount, Currency.COINS)
+    fun removeCoins(player: OfflinePlayer, amount: Int) = remove(player, amount, Currency.COINS)
 
     /**
      * Sets the player's balance to a specified amount.
@@ -145,7 +207,7 @@ interface Economy {
      * economy.set(player, 200u)
      * ```
      */
-    fun set(player: OfflinePlayer, amount: UInt)
+    fun set(player: OfflinePlayer, amount: Int)
 
     /**
      * Sets the player's balance to a specified amount of a specific currency.
@@ -160,7 +222,7 @@ interface Economy {
      * economy.set(player, 200u, Economy.Currency.CRYSTALS)
      * ```
      */
-    fun set(player: OfflinePlayer, amount: UInt, currency: Currency)
+    fun set(player: OfflinePlayer, amount: Int, currency: Currency)
 
     /**
      * Sets the player's balance to a specified amount of crystals.
@@ -174,7 +236,7 @@ interface Economy {
      * economy.setCrystals(player, 200u)
      * ```
      */
-    fun setCrystals(player: OfflinePlayer, amount: UInt) = set(player, amount, Currency.CRYSTALS)
+    fun setCrystals(player: OfflinePlayer, amount: Int) = set(player, amount, Currency.CRYSTALS)
 
     /**
      * Sets the player's balance to a specified amount of coins.
@@ -188,7 +250,7 @@ interface Economy {
      * economy.setCoins(player, 200u)
      * ```
      */
-    fun setCoins(player: OfflinePlayer, amount: UInt) = set(player, amount, Currency.COINS)
+    fun setCoins(player: OfflinePlayer, amount: Int) = set(player, amount, Currency.COINS)
 
     /**
      * Resets the player's balance to the default value.
@@ -255,7 +317,7 @@ interface Economy {
      * val crystals = economy.getCrystals(player)
      * ```
      */
-    fun getCrystals(player: OfflinePlayer): UInt
+    fun getCrystals(player: OfflinePlayer): Int
 
     /**
      * Retrieves the player's balance of coins.
@@ -269,5 +331,5 @@ interface Economy {
      * val coins = economy.getCoins(player)
      * ```
      */
-    fun getCoins(player: OfflinePlayer): UInt
+    fun getCoins(player: OfflinePlayer): Int
 }

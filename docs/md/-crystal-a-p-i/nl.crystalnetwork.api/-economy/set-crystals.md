@@ -3,7 +3,7 @@
 # setCrystals
 
 [jvm]\
-open fun [setCrystals](set-crystals.md)(player: OfflinePlayer, amount: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html))
+open fun [setCrystals](set-crystals.md)(player: OfflinePlayer, amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
 Sets the player's balance to a specified amount of crystals.
 

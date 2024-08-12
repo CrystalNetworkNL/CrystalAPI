@@ -3,7 +3,7 @@
 # add
 
 [jvm]\
-abstract fun [add](add.md)(player: OfflinePlayer, amount: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html))
+abstract fun [add](add.md)(player: OfflinePlayer, amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
 Adds a specified amount to the player's balance.
 
@@ -27,7 +27,7 @@ jvm
 | amount | The amount to add to the player's balance. |
 
 [jvm]\
-abstract fun [add](add.md)(player: OfflinePlayer, amount: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html), currency: [Economy.Currency](-currency/index.md))
+abstract fun [add](add.md)(player: OfflinePlayer, amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), currency: [Economy.Currency](-currency/index.md))
 
 Adds a specified amount of a specific currency to the player's balance.
 

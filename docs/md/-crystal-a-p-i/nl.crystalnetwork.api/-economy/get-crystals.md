@@ -3,7 +3,7 @@
 # getCrystals
 
 [jvm]\
-abstract fun [getCrystals](get-crystals.md)(player: OfflinePlayer): [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html)
+abstract fun [getCrystals](get-crystals.md)(player: OfflinePlayer): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
 
 Retrieves the player's balance of crystals.
 

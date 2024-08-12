@@ -3,7 +3,7 @@
 # set
 
 [jvm]\
-abstract fun [set](set.md)(player: OfflinePlayer, amount: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html))
+abstract fun [set](set.md)(player: OfflinePlayer, amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
 Sets the player's balance to a specified amount.
 
@@ -27,7 +27,7 @@ jvm
 | amount | The amount to set the player's balance to. |
 
 [jvm]\
-abstract fun [set](set.md)(player: OfflinePlayer, amount: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html), currency: [Economy.Currency](-currency/index.md))
+abstract fun [set](set.md)(player: OfflinePlayer, amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), currency: [Economy.Currency](-currency/index.md))
 
 Sets the player's balance to a specified amount of a specific currency.
 

@@ -3,7 +3,7 @@
 # removeCrystals
 
 [jvm]\
-open fun [removeCrystals](remove-crystals.md)(player: OfflinePlayer, amount: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html))
+open fun [removeCrystals](remove-crystals.md)(player: OfflinePlayer, amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
 
 Removes a specified amount of crystals from the player's balance.
 
