@@ -14,7 +14,13 @@ import org.bukkit.inventory.ItemFlag
  */
 interface Economy {
 
-    companion object Items {
+    companion object {
+
+        /**
+         * Lazy-initialized item representing a crystal.
+         *
+         * @since 1.5
+         */
         val CRYSTAL = lazy {
             ItemBuilder.from(Material.EMERALD)
                 .name(Component.text("Crystal", NamedTextColor.AQUA))
@@ -24,6 +30,11 @@ interface Economy {
                 .build()
         }
 
+        /**
+         * Lazy-initialized item representing a coin.
+         *
+         * @since 1.5
+         */
         val COIN = lazy {
             ItemBuilder.from(Material.GOLD_INGOT)
                 .name(Component.text("Coin", NamedTextColor.GOLD))
@@ -32,6 +43,32 @@ interface Economy {
                 .flags(ItemFlag.HIDE_ATTRIBUTES)
                 .build()
         }
+
+        /**
+         * Exception thrown when an economy-related error occurs.
+         *
+         * @since 1.5
+         */
+        open class EconomyException(message: String) : RuntimeException(message)
+
+        /**
+         * Exception thrown when there are insufficient funds.
+         *
+         * @param amount The amount that was attempted to be used.
+         * @param currency The type of currency involved.
+         * @since 1.5
+         */
+        class InsufficientFundsException(amount: Int, currency: Currency) :
+            EconomyException("Insufficient funds: $amount ${currency.name.toLowerCase()}")
+
+        /**
+         * Exception thrown when there is insufficient space in the inventory.
+         *
+         * @param amount The amount of space required.
+         * @since 1.5
+         */
+        class InsufficientSpaceException(amount: Int) :
+            EconomyException("Insufficient space in inventory, required: $amount")
     }
 
     /**

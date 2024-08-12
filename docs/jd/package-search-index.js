@@ -1,1 +1,1 @@
-var packageSearchIndex = [{"l":"nl.crystalnetwork.api","url":"nl/crystalnetwork/api/package-summary.html"}, {"l":"All packages","url":"index.html"}]
+var packageSearchIndex = [{"l":"nl.crystalnetwork.api","url":"nl/crystalnetwork/api/package-summary.html"}, {"l":"nl.crystalnetwork.api.extensions","url":"nl/crystalnetwork/api/extensions/package-summary.html"}, {"l":"All packages","url":"index.html"}]

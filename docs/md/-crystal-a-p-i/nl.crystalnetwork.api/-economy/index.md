@@ -15,8 +15,8 @@ Interface representing the economy system.
 
 | Name | Summary |
 |---|---|
+| [Companion](-companion/index.md) | [jvm]<br>object [Companion](-companion/index.md) |
 | [Currency](-currency/index.md) | [jvm]<br>enum [Currency](-currency/index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[Economy.Currency](-currency/index.md)&gt; <br>Enum representing different types of currencies. |
-| [Items](-items/index.md) | [jvm]<br>object [Items](-items/index.md) |
 
 ## Functions
 

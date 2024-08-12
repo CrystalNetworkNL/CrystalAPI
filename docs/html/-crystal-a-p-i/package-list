@@ -1,17 +1,37 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
+$dokka.location:nl.crystalnetwork.api.extensions////PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/index.html
+$dokka.location:nl.crystalnetwork.api.extensions//api/kotlin.Any#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/api.html
+$dokka.location:nl.crystalnetwork.api.extensions//coins/org.bukkit.entity.Player#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/coins.html
+$dokka.location:nl.crystalnetwork.api.extensions//crystals/org.bukkit.entity.Player#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/crystals.html
+$dokka.location:nl.crystalnetwork.api.extensions//deposit/org.bukkit.entity.Player#kotlin.Int#nl.crystalnetwork.api.Economy.Currency/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/deposit.html
+$dokka.location:nl.crystalnetwork.api.extensions//depositCoins/org.bukkit.entity.Player#kotlin.Int/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/deposit-coins.html
+$dokka.location:nl.crystalnetwork.api.extensions//depositCrystals/org.bukkit.entity.Player#kotlin.Int/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/deposit-crystals.html
+$dokka.location:nl.crystalnetwork.api.extensions//economy/kotlin.Any#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/economy.html
+$dokka.location:nl.crystalnetwork.api.extensions//reset/org.bukkit.entity.Player#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/reset.html
+$dokka.location:nl.crystalnetwork.api.extensions//resetCoins/org.bukkit.entity.Player#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/reset-coins.html
+$dokka.location:nl.crystalnetwork.api.extensions//resetCrystals/org.bukkit.entity.Player#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/reset-crystals.html
+$dokka.location:nl.crystalnetwork.api.extensions//withdraw/org.bukkit.entity.Player#kotlin.Int#nl.crystalnetwork.api.Economy.Currency/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/withdraw.html
+$dokka.location:nl.crystalnetwork.api.extensions//withdrawCoins/org.bukkit.entity.Player#kotlin.Int/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/withdraw-coins.html
+$dokka.location:nl.crystalnetwork.api.extensions//withdrawCrystals/org.bukkit.entity.Player#kotlin.Int/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api.extensions/withdraw-crystals.html
 $dokka.location:nl.crystalnetwork.api////PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/index.html
 $dokka.location:nl.crystalnetwork.api/CrystalAPI///PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-crystal-a-p-i/index.html
 $dokka.location:nl.crystalnetwork.api/CrystalAPI/getEconomy/#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-crystal-a-p-i/get-economy.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion.EconomyException///PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-companion/-economy-exception/index.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion.EconomyException/EconomyException/#kotlin.String/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-companion/-economy-exception/-economy-exception.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion.InsufficientFundsException///PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-companion/-insufficient-funds-exception/index.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion.InsufficientFundsException/InsufficientFundsException/#kotlin.Int#nl.crystalnetwork.api.Economy.Currency/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-companion/-insufficient-funds-exception/-insufficient-funds-exception.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion.InsufficientSpaceException///PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-companion/-insufficient-space-exception/index.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion.InsufficientSpaceException/InsufficientSpaceException/#kotlin.Int/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-companion/-insufficient-space-exception/-insufficient-space-exception.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion///PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-companion/index.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion/COIN/#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-companion/-c-o-i-n.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion/CRYSTAL/#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-companion/-c-r-y-s-t-a-l.html
 $dokka.location:nl.crystalnetwork.api/Economy.Currency.COINS///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-crystal-a-p-i/nl.crystalnetwork.api/-economy/-currency/-c-o-i-n-s/index.html
 $dokka.location:nl.crystalnetwork.api/Economy.Currency.CRYSTALS///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}-crystal-a-p-i/nl.crystalnetwork.api/-economy/-currency/-c-r-y-s-t-a-l-s/index.html
 $dokka.location:nl.crystalnetwork.api/Economy.Currency///PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-currency/index.html
 $dokka.location:nl.crystalnetwork.api/Economy.Currency/entries/#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-currency/entries.html
 $dokka.location:nl.crystalnetwork.api/Economy.Currency/valueOf/#kotlin.String/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-currency/value-of.html
 $dokka.location:nl.crystalnetwork.api/Economy.Currency/values/#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-currency/values.html
-$dokka.location:nl.crystalnetwork.api/Economy.Items///PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-items/index.html
-$dokka.location:nl.crystalnetwork.api/Economy.Items/COIN/#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-items/-c-o-i-n.html
-$dokka.location:nl.crystalnetwork.api/Economy.Items/CRYSTAL/#/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/-items/-c-r-y-s-t-a-l.html
 $dokka.location:nl.crystalnetwork.api/Economy///PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/index.html
 $dokka.location:nl.crystalnetwork.api/Economy/add/#org.bukkit.OfflinePlayer#kotlin.Int#nl.crystalnetwork.api.Economy.Currency/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/add.html
 $dokka.location:nl.crystalnetwork.api/Economy/add/#org.bukkit.OfflinePlayer#kotlin.Int/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/add.html
@@ -32,4 +52,5 @@ $dokka.location:nl.crystalnetwork.api/Economy/set/#org.bukkit.OfflinePlayer#kotl
 $dokka.location:nl.crystalnetwork.api/Economy/setCoins/#org.bukkit.OfflinePlayer#kotlin.Int/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/set-coins.html
 $dokka.location:nl.crystalnetwork.api/Economy/setCrystals/#org.bukkit.OfflinePlayer#kotlin.Int/PointingToDeclaration/-crystal-a-p-i/nl.crystalnetwork.api/-economy/set-crystals.html
 nl.crystalnetwork.api
+nl.crystalnetwork.api.extensions
 

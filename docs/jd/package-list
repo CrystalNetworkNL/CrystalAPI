@@ -1,6 +1,10 @@
 $dokka.format:javadoc-v1
 $dokka.linkExtension:html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion.EconomyException///PointingToDeclaration/nl/crystalnetwork/api/Economy.Companion.EconomyException.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion.InsufficientFundsException///PointingToDeclaration/nl/crystalnetwork/api/Economy.Companion.InsufficientFundsException.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion.InsufficientSpaceException///PointingToDeclaration/nl/crystalnetwork/api/Economy.Companion.InsufficientSpaceException.html
+$dokka.location:nl.crystalnetwork.api/Economy.Companion///PointingToDeclaration/nl/crystalnetwork/api/Economy.Companion.html
 $dokka.location:nl.crystalnetwork.api/Economy.Currency///PointingToDeclaration/nl/crystalnetwork/api/Economy.Currency.html
-$dokka.location:nl.crystalnetwork.api/Economy.Items///PointingToDeclaration/nl/crystalnetwork/api/Economy.Items.html
 nl.crystalnetwork.api
+nl.crystalnetwork.api.extensions
 
