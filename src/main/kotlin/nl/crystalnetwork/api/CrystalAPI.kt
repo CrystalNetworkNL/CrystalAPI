@@ -20,4 +20,12 @@ interface CrystalAPI {
      * @since 1.0
      */
     fun getEconomy(): Economy
+
+    /**
+     * Retrieves the chat system.
+     *
+     * @return The chat system.
+     * @since 1.6
+     */
+    fun getChat(): Chat
 }

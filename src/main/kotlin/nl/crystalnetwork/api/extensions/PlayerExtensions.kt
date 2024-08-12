@@ -5,6 +5,18 @@ import nl.crystalnetwork.api.Economy.Companion.InsufficientFundsException
 import nl.crystalnetwork.api.Economy.Currency
 import org.bukkit.entity.Player
 
+var Player.prefix : String?
+    get() = chat.getPrefix(this)
+    set(value) = chat.setPrefix(this, value)
+
+var Player.suffix : String?
+    get() = chat.getSuffix(this)
+    set(value) = chat.setSuffix(this, value)
+
+var Player.nickname : String?
+    get() = chat.getNickName(this)
+    set(value) = chat.setNickName(this, value)
+
 /**
  * Extension property to get or set the number of crystals a player has.
  *

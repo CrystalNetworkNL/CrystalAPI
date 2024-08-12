@@ -9,7 +9,7 @@ object [Companion](index.md)
 
 | Name | Summary |
 |---|---|
-| [EconomyException](-economy-exception/index.md) | [jvm]<br>open class [EconomyException](-economy-exception/index.md)(message: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : [RuntimeException](https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html)<br>Exception thrown when an economy-related error occurs. |
+| [EconomyException](-economy-exception/index.md) | [jvm]<br>open class [EconomyException](-economy-exception/index.md)(message: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)) : RuntimeException<br>Exception thrown when an economy-related error occurs. |
 | [InsufficientFundsException](-insufficient-funds-exception/index.md) | [jvm]<br>class [InsufficientFundsException](-insufficient-funds-exception/index.md)(amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), currency: [Economy.Currency](../-currency/index.md)) : [Economy.Companion.EconomyException](-economy-exception/index.md)<br>Exception thrown when there are insufficient funds. |
 | [InsufficientSpaceException](-insufficient-space-exception/index.md) | [jvm]<br>class [InsufficientSpaceException](-insufficient-space-exception/index.md)(amount: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)) : [Economy.Companion.EconomyException](-economy-exception/index.md)<br>Exception thrown when there is insufficient space in the inventory. |
 

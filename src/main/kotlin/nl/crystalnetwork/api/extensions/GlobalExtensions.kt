@@ -1,5 +1,6 @@
 package nl.crystalnetwork.api.extensions
 
+import nl.crystalnetwork.api.Chat
 import nl.crystalnetwork.api.CrystalAPI
 import nl.crystalnetwork.api.Economy
 import org.bukkit.Bukkit
@@ -19,3 +20,11 @@ val Any.api: CrystalAPI
  */
 val Any.economy: Economy
     get() = api.getEconomy()
+
+/**
+ * Extension property to get the `Chat` instance.
+ *
+ * @since 1.6
+ */
+val Any.chat: Chat
+    get() = api.getChat()

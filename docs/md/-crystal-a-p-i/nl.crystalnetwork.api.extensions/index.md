@@ -7,9 +7,13 @@
 | Name | Summary |
 |---|---|
 | [api](api.md) | [jvm]<br>val [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html).[api](api.md): [CrystalAPI](../nl.crystalnetwork.api/-crystal-a-p-i/index.md)<br>Extension property to get the `CrystalAPI` instance. |
+| [chat](chat.md) | [jvm]<br>val [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html).[chat](chat.md): [Chat](../nl.crystalnetwork.api/-chat/index.md)<br>Extension property to get the `Chat` instance. |
 | [coins](coins.md) | [jvm]<br>var Player.[coins](coins.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>Extension property to get or set the number of coins a player has. |
 | [crystals](crystals.md) | [jvm]<br>var Player.[crystals](crystals.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>Extension property to get or set the number of crystals a player has. |
 | [economy](economy.md) | [jvm]<br>val [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html).[economy](economy.md): [Economy](../nl.crystalnetwork.api/-economy/index.md)<br>Extension property to get the `Economy` instance. |
+| [nickname](nickname.md) | [jvm]<br>var Player.[nickname](nickname.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
+| [prefix](prefix.md) | [jvm]<br>var Player.[prefix](prefix.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
+| [suffix](suffix.md) | [jvm]<br>var Player.[suffix](suffix.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? |
 
 ## Functions
 
